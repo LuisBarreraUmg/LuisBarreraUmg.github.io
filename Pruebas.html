@@ -6,39 +6,56 @@
 </head>
 <body>
 
-<script>
-document.write('Hola Mundo'); 
-document.write('<br>');	
-	let nombre;
-        let edad;
-        nombre = prompt('Ingrese su nombre:');
-        edad = prompt('Ingrese su edad:');
-        document.write('Hola ');
-        document.write(nombre);
-        document.write(' asi que tienes ');
-        document.write(edad);
-        document.write(' años');
-document.write('<br>');
-  	let valor1;
-        let valor2;
-        valor1 = prompt('Ingrese primer número:');
-        valor2 = prompt('Ingrese segundo número');
-        let suma = parseInt(valor1) + parseInt(valor2);
-        let producto = parseInt(valor1) * 	parseInt(valor2);
-        document.write('La suma es ');
-        document.write(suma);
-        document.write('<br>');
-        document.write('El producto es ');
-        document.write(producto);
-document.write('<br>');
-	let nombre;
-        let nota;
-        nombre = prompt('Ingrese nombre:');
-        nota = parseInt(prompt('Ingrese su nota:'));
-        if (nota >= 4) {
-            document.write(nombre + ' esta aprobado con un ' + 	nota);
+<script> 
+let valor;
+        valor = parseInt(prompt('Ingrese un valor comprendido entre 1 y 5:'));
+        switch (valor) {
+            case 1:
+                document.write('uno');
+                break;
+            case 2:
+                document.write('dos');
+                break;
+            case 3:
+                document.write('tres');
+                break;
+            case 4:
+                document.write('cuatro');
+                break;
+            case 5:
+                document.write('cinco');
+                break;
+            default:
+                document.write('debe ingresar un valor comprendido entre 1 y 5.');
         }
+document.write('<br>');
+
+let col;
+        col = prompt('Ingrese alguno de estos tres colores (rojo, verde, azul)');
+        switch (col) {
+            case 'rojo':
+                document.write('se ingresó rojo');
+                break;
+            case 'verde':
+                document.write('se ingresó verde');
+                break;
+            case 'azul':
+                document.write('se ingresó azul');
+                break;
+        }
+document.write('<br>');
+let x;
+        x = 1;
+        while (x <= 10) {
+            document.write(x);
+            document.write('<br>');
+            x = x + 1;
+        }
+
 </script>
 
+<br>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ZK9iP5PEhSU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </body>
+
 </html>
